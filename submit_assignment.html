@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width: 40%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Upload Assignment</h2>
+    <form action="upload_assignment.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="student_id" placeholder="Student ID" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <input type="text" name="title" placeholder="Assignment Title" required>
+        <input type="file" name="assignment_file" accept=".pdf,.doc,.docx" required>
+        <button type="submit">Upload</button>
+    </form>
+</div>
+</body>
+</html>

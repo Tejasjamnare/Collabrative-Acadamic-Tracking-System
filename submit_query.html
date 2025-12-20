@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Query</title>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+h3 {
+    color: #333;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #ddd;
+    transition: 0.3s;
+}
+
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Submit a Query</h2>
+        <form action="submit_query.php" method="POST">
+            <label for="query_text">Enter Your Query:</label><br>
+            <textarea id="query_text" name="query_text" required></textarea><br>
+            <button type="submit" class="btn">Submit Query</button>
+        </form>
+    </div>
+</body>
+</html>

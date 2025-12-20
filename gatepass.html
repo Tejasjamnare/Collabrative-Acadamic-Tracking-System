@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Pass Management</title>
+</head>
+<body>
+    <h2>Gate Pass Management</h2>
+
+    <!-- Form to Approve or Reject Gate Pass -->
+    <form action="gatepass.php" method="post">
+        <label for="pass_id">Gate Pass ID:</label>
+        <input type="number" id="pass_id" name="pass_id" required>
+
+        <label for="status">Update Status:</label>
+        <select id="status" name="status" required>
+            <option value="Approved">Approve</option>
+            <option value="Rejected">Reject</option>
+        </select>
+
+        <button type="submit">Update Status</button>
+    </form>
+</body>
+</html>

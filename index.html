@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('mmm.jpg'); /* Use correct relative path */
+            background-size: cover;           /* Makes image cover the whole screen */
+            background-position: center;      /* Centers the image */
+            background-repeat: no-repeat;     /* Prevents tiling */
+            min-height: 100vh;                /* Ensures full height of the screen */
+            margin: 0;                        /* Removes default margin */
+        }
+        
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent to show background */
+            width: 60%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+        }
+        .button {
+            display: block;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            width: 150px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .button-group div {
+            text-align: center;
+        }
+        .button-group img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to  Academic Tracking System</h1>
+        <div class="button-group">
+            <div>
+                <img src="faculty.jpg" alt="Faculty">
+                <a href="login.html?role=faculty" class="button">Faculty</a>
+            </div>
+            <div>
+                <img src="student.jpg" alt="Student">
+                <a href="login.html?role=student" class="button">Student</a>
+            </div>
+            <div>
+                <img src="parent.jpg" alt="Parent">
+                <a href="login.html?role=parent" class="button">Parent</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

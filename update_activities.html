@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Activities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Update Student Activities</h2>
+        <form action="update_activities.php" method="POST">
+            
+            <!-- Student ID -->
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required>
+
+            <!-- Activity Name -->
+            <label for="activity_name">Activity Name:</label>
+            <input type="text" id="activity_name" name="activity_name" required>
+
+            <!-- Activity Date -->
+            <label for="activity_date">Activity Date:</label>
+            <input type="date" id="activity_date" name="activity_date" required>
+
+            <!-- Activity Description -->
+            <label for="description">Activity Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Update Activity</button>
+        </form>
+    </div>
+</body>
+</html>

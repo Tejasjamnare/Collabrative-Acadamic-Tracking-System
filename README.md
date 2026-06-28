@@ -45,25 +45,6 @@ The **Collaborative Academic Tracking System** is a web-based application design
 
 ---
 
-## 📂 Project Structure
-
-```text
-Collaborative-Academic-Tracking-System/
-│── css/
-│── js/
-│── images/
-│── database/
-│── admin/
-│── faculty/
-│── student/
-│── index.php
-│── login.php
-│── register.php
-│── README.md
-```
-
----
-
 ## 📊 Key Functionalities
 
 * Manage student profiles and academic records.
